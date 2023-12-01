@@ -1,0 +1,257 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+background-color:white;
+}
+nav {
+  position: sticky;
+  top: 0;
+}
+
+#firstnav {
+  background-color: rgba(4, 4, 96, 0.825);
+  padding: 0.5rem 10%;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;}
+
+  .secondnav {
+    line-height: 1.5;
+    text-align: center;
+    font-weight: bold;
+    background-color: #fff;
+    color: black;
+    transition: height 0.6s linear;
+    transition: transform 0.6s linear, opacity 0.6s linear; 
+  }
+
+  .secondnav a {
+    text-decoration: none;
+    color: black;
+  }
+
+
+  .secondnav ul li {
+    border-bottom: rgba(29, 29, 23, 0.153) 2px ridge ;
+    padding:5px;
+  }
+
+  .active {
+
+    display: none;
+    transition: opacity 0.6s linear,
+
+  }
+  #logo1.active {
+    display: none;
+    transition: transform 0.6s linear,  opacity 0.6s linear; ;
+
+  }
+  #logo2.active {
+
+    display: none;
+  }
+
+#logo1{
+  font-size: xxx-large;
+  display: flex;
+}
+#logo1:hover {
+  cursor: pointer;
+  color: aqua;
+}
+.logo {
+  font-size: xxx-large;
+  cursor: pointer;
+}
+.logo:hover {
+  color: aqua;
+}
+
+#logo2 {
+  font-size: xxx-large;
+}
+
+#lowerlogo {
+  margin-top: 8rem;
+  color: black;
+  text-decoration: none;
+  font-size: 50px;
+  justify-content: center;
+  display: flex;
+}
+
+.container{
+  margin: 5rem;
+flex-direction: column;
+border-color: 2px px 2px 2px black;
+line-height: 4rem;
+box-shadow: 0px 0px 10px 0.5px;
+height: 100vh;
+border-radius: 10px;
+
+}
+
+.container h1 {
+  align-items: center;
+  text-align: center;
+  font-size: 80px;
+  padding-top: 20%;
+
+}
+
+.container2 {
+margin: 5rem;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+
+form label {
+  padding-right: 20px;
+  font-size: larger;
+  font-weight: bolder;
+  display: flex;
+}
+form a{
+  text-decoration: none;
+  display: flex;
+  justify-content:center;
+  font-size: larger;
+  color: initial;
+}
+
+form a:hover {
+  color:  blue;
+}
+#password {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 4;
+  display: flex;
+  flex-direction: column;
+
+}
+
+#password label {
+  padding-right: 9%;
+ width: 100%;
+
+}
+form input {
+  padding: 1rem;
+  border-radius: 6px;
+  width: 100%;
+  margin: 10px;
+  font-size: large;
+
+}
+img {
+  width: 60%;
+}
+
+
+.forget {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 5rem;
+}
+
+.forget a {
+  padding-right: 10px;
+  list-style: none;
+  text-decoration: none;
+  font-size: large;
+  color: initial;
+}
+
+.forget a:hover {
+  color: blue;
+}
+
+button {
+  padding: 0.2rem 6rem;
+  margin: 10px;
+  font-size: large;
+  border-radius: 15px;
+  background-color: crimson;
+  color: #fff;
+  border-color: #fff;
+}
+
+button:hover {
+  color: crimson;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+footer {
+  background-color: rgba(6, 6, 94, 0.825);
+  padding: 1rem;
+  color: #fff;
+  align-items: center;
+  text-align: center;
+}
+
+/* RESPONSIVE */
+@media (max-width: 500px){
+  body{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  .container {
+    margin: 1rem;
+  }
+  .container h1 {
+    font-size: 50px;
+  }
+
+  form input {
+    margin: 0;
+
+  }
+  label {
+    margin: 1px;
+  }
+  #password {
+    margin: 0;
+  }
+  .forget {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 1rem; border-bottom: 1px black ridge;
+    margin-left: 2.5rem;
+  }
+  .forget .btn1 {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    display: flex;
+    width: 100%;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+   
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #firstnav {
+    padding: 0.5;
+    position: sticky;
+  }
+
+}

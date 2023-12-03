@@ -3,11 +3,14 @@
   padding: 0;
 }
 body{
-background-color: white;
+background-color:white;
 }
 nav {
   position: sticky;
   top: 0;
+}
+.clr {
+  clear: both;
 }
 
 #firstnav {
@@ -106,7 +109,7 @@ border-radius: 10px;
 margin: 5rem;
   justify-content: center;
   margin-top: 50px;
-  height: 100%;
+  /* height: 100vh; */
 }
 
 form {
@@ -125,12 +128,12 @@ form label {
 form a{
   text-decoration: none;
   display: flex;
-  justify-content: center;
+  justify-content:center;
   font-size: larger;
   color: initial;
 }
 
-form a: hover {
+form a:hover {
   color:  blue;
 }
 #password {
@@ -201,12 +204,14 @@ footer {
   color: #fff;
   align-items: center;
   text-align: center;
+  position: bottom;
+  bottom: 0;
 }
 
-/* RESPONSIVE */
-@media (max-width: 600px){
+/* RESPONSIVE FOR SMARTPHOHE*/
+@media only screen and (max-width: 500px){
   body{
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
   }
   .container {
     margin: 1rem;
@@ -214,6 +219,7 @@ footer {
   .container h1 {
     font-size: 50px;
   }
+
 
   form input {
     margin: 0;
@@ -255,4 +261,59 @@ footer {
     position: sticky;
   }
 
+
+  
 }
+/* RESPONSIVE FOR TABLET*/
+@media(min-width:501px) and (max-width
+  :768px){
+    .container {
+      margin: 1rem;
+    }
+    .forget {
+      margin: 0;
+      flex-direction: row;
+    }
+    .forget .btn1 {
+      padding-top: 5px;
+      padding-bottom: 5px;
+      padding-right: 50px;
+      padding-left: 50px;
+    }
+    #password {
+  margin-top: 0.5rem;
+}
+
+  }
+
+  @media(min-width:789px){
+    .container {
+      padding-top: 0;
+      padding-bottom: 1rem;
+    }
+.forget {
+  margin: 0;
+}
+    #password {
+margin: 0;
+    }
+    .container h1 {
+      padding-top: 7%;
+    }
+  }
+
+
+  /* @media(min-width:789px)
+  {
+    .container {
+      padding-top: 0;
+      padding-bottom: 1rem;
+    }
+
+    #password {
+margin: 0;
+    }
+  .container h1 {
+    padding-top: 0;
+  }
+  } */

@@ -124,12 +124,12 @@ form label {
 form a{
   text-decoration: none;
   display: flex;
-  justify-content:center;
+  justify-content: center;
   font-size: larger;
   color: initial;
 }
 
-form a:hover {
+form a: hover {
   color:  blue;
 }
 #password {

@@ -55,7 +55,9 @@ nav {
     border-bottom: rgba(29, 29, 23, 0.153) 2px ridge ;
     padding:5px;
   }
-
+  .secondnav ul li a:hover {
+    color: rgba(6, 6, 94, 0.825);
+  }
   .active {
 
     display: none;
@@ -80,6 +82,10 @@ nav {
   cursor: pointer;
   color: aqua;
 }
+#logo2:hover {
+  cursor: pointer;
+  color: aqua;
+}
 .logo {
   font-size: xxx-large;
   cursor: pointer;
@@ -89,7 +95,7 @@ nav {
 }
 
 #logo2 {
-  font-size: xxx-large;
+  font-size: xx-large;
 }
 
 #lowerlogo {
@@ -202,14 +208,14 @@ button {
   margin: 10px;
   font-size: large;
   border-radius: 15px;
-  background-color: crimson;
-  color: #fff;
+  background-color: #fff;
+  color: black;
   border-color: #fff;
 }
 
 button:hover {
   color: crimson;
-  background-color: #fff;
+  background-color: aqua;
   cursor: pointer;
 }
 
@@ -225,27 +231,54 @@ footer {
 
 /* RESPONSIVE FOR SMARTPHOHE*/
 @media only screen and (max-width: 500px){
+  #firstnav {
+  height: ;
+  }
+  
+  #logo1{
+    padding-top: 10px;
+    font-size: large;
+    display: flex;
+  }
+
+  #logo2 {
+    font-size: large;
+  }
+  .logo img {
+    width: 25%;
+    padding-bottom: 15px;
+  }
+  
   body{
   font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
   }
   .container {
-    margin: 1rem;
+    margin: 3rem;
   }
   .container h1 {
-    font-size: 50px;
+    font-size: 35px;
   }
-
+  
+.container2{
+  margin: 20%;
+}
+  form {
+    margin-top: 0;
+  }
 
   form input {
     margin: 0;
-
+    height: 2px;
   }
-  label {
+  form label {
     margin: 1px;
+    font-size: x-small;
   }
+
   #password {
     margin: 0;
   }
+
   .forget {
     flex-direction: column;
     align-items: center;
@@ -253,6 +286,13 @@ footer {
     text-align: center;
     margin-top: 1rem; border-bottom: 1px black ridge;
     margin-left: 2.5rem;
+  
+  }
+  .forget a {
+    font-size: x-small;
+  }
+  form a p {
+    font-size: x-small;
   }
   .forget .btn1 {
     padding-top: 0.5rem;
@@ -263,8 +303,7 @@ footer {
     justify-content: center;
     align-items: center;
     text-align: center;
-   
-  }
+  } 
   form {
     display: flex;
     flex-direction: column;
@@ -272,11 +311,13 @@ footer {
     align-items: center;
   }
   #firstnav {
-    padding: 0.5;
+    padding: 0.1;
     position: sticky;
+    height: 2rem;
   }
-
-
+.secondnav {
+  font-size: x-small;
+}
   
 }
 /* RESPONSIVE FOR TABLET*/
@@ -288,6 +329,7 @@ footer {
     .forget {
       margin: 0;
       flex-direction: row;
+      
     }
     .forget .btn1 {
       padding-top: 5px;
@@ -295,11 +337,14 @@ footer {
       padding-right: 50px;
       padding-left: 50px;
     }
+    .forget a {
+      font-size: x-small;
+    }
     #password {
   margin-top: 0.5rem;
 }
 
-  }
+
 
   @media(min-width:789px){
     .container {
@@ -307,13 +352,13 @@ footer {
       padding-bottom: 1rem;
     }
 .forget {
-  margin: 0;
+  margin: ;
 }
     #password {
 margin: 0;
     }
     .container h1 {
-      padding-top: 7%;
+      padding-top: 15%;
     }
   }
 

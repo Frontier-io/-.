@@ -203,7 +203,7 @@ footer {
 }
 
 /* RESPONSIVE */
-@media (max-width: 500px){
+@media (max-width: 600px){
   body{
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   }

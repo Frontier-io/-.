@@ -239,10 +239,14 @@ footer {
     padding-top: 10px;
     font-size: large;
     display: flex;
+    padding-left: 3.5rem;
   }
 
   #logo2 {
+    padding-top: 8.5px;
     font-size: large;
+    display: flex;
+    padding-left: 3.5rem;
   }
   .logo img {
     width: 25%;
@@ -253,7 +257,9 @@ footer {
   font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
   }
   .container {
-    margin: 3rem;
+    margin: 2rem;
+    height: 100vh;
+    width: initial;
   }
   .container h1 {
     font-size: 35px;
@@ -264,6 +270,7 @@ footer {
 }
   form {
     margin-top: 0;
+    margin-right: 1.5rem;
   }
 
   form input {
@@ -284,7 +291,7 @@ footer {
     align-items: center;
     justify-content: center;
     text-align: center;
-    margin-top: 1rem; border-bottom: 1px black ridge;
+    margin-top: 2rem; border-bottom: 1px black ridge;
     margin-left: 2.5rem;
   
   }
@@ -300,8 +307,6 @@ footer {
     display: flex;
     width: 100%;
     margin: 0;
-    justify-content: center;
-    align-items: center;
     text-align: center;
     font-size: x-small;
   } 
@@ -317,6 +322,13 @@ footer {
     height: 2rem;
   }
 .secondnav {
+  font-size: x-small;
+}
+footer {
+  padding: 5px;
+  font-size: x-small;
+}
+input::-webkit-input-placeholder {
   font-size: x-small;
 }
   

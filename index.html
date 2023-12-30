@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en" class="light da next h-full" data-resource-package-id="res-responsive-login-page">
+
+<head>
+    <script type="text/javascript" src="/static/js/comcast-common.js"></script>
+    <title>Sign in to Xfinity</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="description" content="Get the most out of Xfinity from Comcast by signing in to your account. Enjoy and manage TV, high-speed Internet, phone, and home security services that work seamlessly together &mdash; anytime, anywhere, on any device.">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="static/images/global/favicon/favicon-96x96.png">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="/static/resi/dist/prism-ui/prism-ui-d8e85d8.css" />
+    <link rel="stylesheet" href="/static/resi/dist/bundle-d8e85d8.css" />
+    <script type="module" src="/static/resi/dist/prism-ui/prism-ui.esm-d8e85d8.js"></script>
+    <script type="text/javascript" src="/static/resi/dist/bundle-d8e85d8.js" defer></script>
+    <script>
+        const polarisScript = document.createElement("script");
+        polarisScript.src = "https://polaris.xfinity.com/globalnav/polaris." + (window.customElements ? "wc" : "es5") + ".js";
+        polarisScript.async = true;
+        document.head.append(polarisScript);
+    </script>
+    <link rel="shortcut icon" href="/static/images/favicon/favicon.ico">
+    <link rel="apple-touch-icon" sizes="57x57" href="static/images/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="static/images/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="static/images/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="static/images/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="static/images/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="static/images/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="static/images/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="static/images/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="static/images/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="static/images/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="static/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="static/images/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="static/images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="static/images/favicon/manifest.json">
+
+    <script type="text/javascript">
+        runtimeData = {
+            "r": "comcast.net",
+            "s": "oauth",
+            "continue": "https://oauth.xfinity.com//oauth//authorize?client_id=res_ox_prod&amp;response_type=code&amp;redirect_uri=https://connect.xfinity.com/appsuite/api/comcast/openid&amp;scope=urn:csp:scope:self-help:account%20prefmgr:adoptout:rendpoint%20openid%20email%20profile%20address%20phone&amp;state=eyJ0ek9mZnNldCI6IjM2MDAwMDAifQ==&amp;response=1&amp;reqId=a7f3d98b-f3a7-460b-abfd-8aff0e3388a7",
+            "flowStateId": "CgNDRlMQAhgBIiDBTbLiJdFzJ4cgx1Vc3R_myDXOHqLjRMtzMJ3rjpqTtSoQa92OM4tiB58ssjTVW8gXcDJ8CjwyMDIwLTA0LTI4dDIxOjI5OjMwIWYxMWFiZGNmLTQyMWEtNDEyMS1hNGUxLTc5MjBiY2FmYzJjZSFlbmMSPDIwMjAtMDQtMjh0MjE6Mjk6MjkhYzk5YWE0MzMtMmQyMi00MDY0LTliMDItMWJkNGVlNzk3YWJhIXNpZzqAHlXgAL7ZblXqufZXAWV-WPERya-D9MM34QIc9X6ZcYzdDGlJk8giilAAfzao5OyiGHQqwQdMMl2iboQHFxa6THQW_yu2IXNtimXmbUfURvrdVLEbcLJr5HHkEzyPOzz62mJvq-sip1rEbo3Lpi50c8FAwzmW_eJf6kVAgu5dRGekzHh66YRQTNAkhzMhVXYxo9AXFr5AsMB2hH8RMev9Uq-IJ82Tw3vPYcHoSdTSInnKi1RxrBIMJmal_qcHKaeMsDdBvUup98_Qfi2pCpqQ1n-gmEOwv9kdaetVzCO-ZJ4aFhkKG36t8OUZA6M3Z3GdIJMiv6ed-kX6NgqPq9DYsCUdUjwXL9WQAIZRHDw8uP3JWm5qG6jPXiZApmjlA1M-sPBbkzZeyGAWnXtk3sxPAe0GgDzslRVrcXLsdncKCsSBdJFzSycV9bX6BblIwWfzREJHWqNEtbuFYvcGmc5mWf9y0OvabbYjisc6rFvoX3tiTY5VbgtY7SjXxcDHrEp9bDKAgNsnMkzVG6XcNyHN7OUm2DoQvEz0reLUZUUTqWBMkmi2_d54TsjYWoNwILRhbd0MLhJ3G7yNqidlAtnw_gX3V-uI2rCyRDr-6c50btoPgICGMbfR6S18OI39MUnYr50VXqT3_HVHViAPrwI79-5pibWmgSR47uW-m08BYiOrmZBARWEPI-J-J0hX1AJBUkodpHivOfA3qEfqP_32N7JB7d0ra7iARQkNvy7ZnTvxBjsXWzz0_-TI_GenEAG-ucp8ZGIXKpXk9WKMGnsb3qog6HmlMUu5PKHFuEmvhPOWa2PItQ9zuAlH3FX2qdGSNTwhdVay6QucRXZwa_JGhE8p_soZYbOWa3B1Ol7f1XL15CUks4RmaE14aJDEVUvgY95CsFafHAY7bBOwlxbDYrr7Et1LBYiznv-lJh_j8zT73NuBi0WsYDjnuaR-Xr7pWjd6EgSZGhfXKXabf2SLpwbwmnkIPRf7l9M3itaC3hoHACagX3n44SrDBqze6BC_rl8d2qHVaGwy2L-iNpq6sG-V62l4462bp3BtAocJGWb3wDptIPqhk1iWMP7Cnr15xvVeqsl7ToG479xsOvTj7VOVBQdMFT7gKm_xgGZjHD69buGLUqsWQHt9mcok42Tq-FZi8KrtmZgeUkhHrHgke-GzzIKRu3vhb4D-PLvHgaSbYezOkVPEX7s3SQbrC7epUIW0-X-Cqq-87RGnCQiKn4mI9rqIY41J1z00lq1bLur2Ez5nqJib2enj9JbgVigNnQ_unapAKncFX-URE7_B8s65ZrfyDMsCTTiAQi0tPZlC-TeC4yqO2wpTkDFqF3Gs65ASwe4IfjyF65J5bZdqd5z9g7ZRh5D6OuDFMT1t6waVpqLkh_kJB7bQ90A2QtcVvbFYJexK9Hv9hTn6pDgwZX9Z1U9WjKubK7kOyHvSDghbMHPHJ_BktvEkAe1CaKgTHSB916VQ6vVMpsDa7FsbpibirHUpGhxrOEfcErG0EBx2OsT-0K-nEpaaOOql-RK7R5b874REQOBCXe9BkbHDSncmvljsh0MYxQ9wSFX43je2ZiKVDMjeX1TmV9YL9MOrnLCu2v1X-cFn6jgt6p8DNsDYcjQ2djlnI8pJfc3SKSMjjonQFCbFbYu0d21lNRmdBi01Qe0SBlFup_VqG6eC6nTqsNxSLEJgtA-Yw2Asw0fcL68zi2jHFaa_iY7WdjJid9ZFNlLcTuAA02XNry7CZUnkC5CrvmzltQRtqPzLutL810cYwLLrsjZk5-sgITBFaPVy3RzOwJVWPt3EyTkA61dJF99mQkmL_fevN5WcYQMA298nNvtqW3xgP5lT9TKA2WDM_E-u92z2oOYA9Eu_uJEbSz5rnQAjiXCHWn-m26H-W3Km4au5mAQSvVK3-ex_UlKDbrkyQTQ1LunQn5GRom_RFu_ypFY5J2OFO85U0EL3c5UOnnncwshONwPB1P-0KwWbEL1NJPYKbHHv0w09x3efHEYy4TSQSsG5y-8-No5GMFZ8zASmkJWDifkGomy98lixPedqsOJP6_D8naSqTPEYStLTxfzdMUg5J2BuaMlfJKmmrEx-vqVmgHhHUP20Jhx0mZlKgtqu29OLZdxSZTHaDc_EDEMzKX1dGMj5P8aR6Rmj6V-d_V3aM0A_NmoBnnmEbNFjFExAs2lTiu9hEPqw8yxzC-leaxL9KyR99m3V230rAaOcT4q950qwWdVpwUgoD3VWQcUj6V_OlX8KUL3j4krGocYNpJ4eB0g0ZEcAPnPKAIpms84XUf7HUq7cPdUqKy7cnbWlXZzDhXlngCnCBYcbrausOoBvGv1lpQp3DYiXSqvixmbbeGLPS6X8Z47-PE_tiQNsRWNl270jlbOwR4vaOPo1R2tuRw9NsRfs74xijt0KA6O3nxtjvvK8V6r9TWXRBgn-ZBz31Wa_SenDThJ5qJdmzcn1raVBSthQ19xDNlEZpfyz1XFt3N9a8Ku7j8RooiWPRT7iPK9MmMq5d6dUicp_UysVYEbOgzpNHnbCEPuE2ajcemo-pmksYs0eESDUUnd6lpQFuSVnkj3Z1UEQyZ1EnjHYopPvBN_m0EAbfYHGQiLpYH36GW_bnvZ45N8QJ4vcOilgvB5n63S0z9WFS2Ezv9O4v_uBVw3ytVSeXm6NDzbWS89EJ-hmsye4sN86bKWPJmIrKrYdueECxkDwtxUFDm-46QTV2nWSHhswi4VaCu0XUjnt1JJ9JAKYWcmig3QtSjWLND6QkGzIJ2rdC-IKjvJuUD792r4iOMvWueaXQpnptz2-za7JMe6gUJ5gknT7oRDkbvGfz-Kk-dSG_QmfZB28beFR9jP-9C2-DK2kW7cjAlye8wZfNglN92Sh9qNZZK_VGrtwyCndOzd9-1lLSvBa0Pun1h1q71GUVCTd6OH1cz-ydmndA-_fOseGqMwK5nWUzB1KvzpPNAfKq-Xez_l9Ir1Vud37qN_WsZQOHUzmNbN5j2jSlSS9JJPfhJKjsLLmax6_onyBFlKCFV-XncYxfVXBpvFmOwXo8duYr1ljvSfSCHRHcPUpbdElfhRcd7Ml3v_IW1t--34xL_QgjAqi0zBfsq2po3w6PfJB53Ck8pTqS84cBe-A-X_2LWAohILi_Z_CRuKIgewg8Jg2SM_TLXXRn_4FNp1sBRm5zXRaYD2vG9jBnJnRXuwpoKsEr1R3pW5vgMOurrRYsewRSKSsSYOcdNPQ2CwAPb20VGaWAPqG3mieczkIPJg8CFR78wbxeA80JkML4J7_mwNiRCbJGIr2jipKwRwG1N7rSP8OpTmtSEpSrV7sfvXo358afxb6RJUfT2uXekpP22dqcnfV5npXGz2HNuHGWv8VNeqxEVehdyfpSB4xTxPmR1Fafchf0Dm3jQ6V-iqmd2QYKhTjMLIyB6ELjatnzDNV5R_Q3789kz3OEDN3ka1_ieWoxaI3f0xs6wk0cp2j4hsEvYHMCbQYMaraVb_jVAB_qnn1kQ-iJhiZq2XpK-LB-14FUJIpUX8XC09iQQ9LkTsJbdIMhJ0xyZJoGq3w2JxRCQisOHLw72lX35oYQ5OxsfcglcI8rkMkg13zDMoGaUZBk8ZUb3C8xN5nJ5o66IBcDs3vWeQQlcflnPL5q7Z_5rAp5ZinFeiYJ1CjmraJ6g2ooUuX0LVO9BkJ_VPZQaBVy-7SZpu5TQLdqBDVkheWEdCbA1wMpoBBi_2HoiojIlUxfPH7807m-idg7SHyqPumliCwvidimXTDTeM89na6zGZglf6w029r6XBvmxnOc_N5Z8p5p5IKJq-ymxvtAZ2qpT__5bcwJdPbsBgaZ5e8KZQYxwnPZZARQt1rqRgBJeRid1dqFwEhHZZrfD7igmlbur9f_4jWWTp3ufbIQSpA-mVFlk_n4jb5llONPgEPCOaE4fYvmk2qTCbIJYaj4koZygdSsdkBHGSfjO5jQICsXprBYX6DlPNVSYqQ30QBPYnTK7En_0aZ5IaKs1ZkKV3RkjrGdRQO4Yw36gtVPYwR7gdjA8fRRIXIN340qh2Tl8-nXHvW189zqoWeQyMGNN8LvWIHkb9PBR_861zB981x23btDlLn8Hlt4puUbUHvOAXj5zWkVsLYNKb6D9_RVjFrF9-RKoYSUwUBhiDLmaLkWhJj1JJP5AVAL5vbrrpETozACJy9Ec-QqCkIBeVIyeCxx1fmLQYYcYNwlJ16esK3pR-D_XoSl8Ei37aC7aDGIIplZ_HNL3jwT5txLkBD4IzklxK9MtWmTVwLI_sUCGWXskNLZ9vxHQO1Ucb75Nl_4_O-x0C1rQ2NIVRn32vnNJU3eHHqiSyWeqnnDxPHYeKyzej0t5CGtFG2LhSk6VrBer3VDjpgDnAtJwbseTyc_c3zcu26d4gkcgs-FUcMcDbSr3Ipuh5FW4hNWfNREo__WpSihqnHSqQVrKIsbeGgfdJEje1S7S7OCarypbrPpYxbUTAc-sl0j9NA8I0BkQYZ4_OxWsTwikuLskgBpiLDhrFqZxSI1ApP9ByQUY_M7j8xQw_MygZQe6fnoJgHF5CUF3K_QbtIG4JlDOWenym47wHbAxlO-p-T0LLaciW9e3mfBBmhNedcmXAD2QcDA5WF92VGRqUHUQUdX3gu1VjyFAhdGuneF8Bx8y1j2iNxyOAQd7XIUvDm0ODEKhvpgua4gb8OhGwoleFrfXXSULWjDre_pzCUCzqEusN45u6N2Ymoiw9eBji7u9JnWrgunbkVncbYV6IkTZuOPCWfjm-FHV2qO7NYeqUlb8m95CzLkt-mzlHqT9NtZnT_Pn-DLDD39Qi38licrxxY8O-K-m0F8tlwoVssRvs4cc3TJposCswk6Ug00Pt-GyOmlDJZwJnItqT8FMiBdpl9YjLb7F0yQ-YNsxS0NRSCS8suaRZ_i8EjVVNGzL0QA2fZRW9AFYaFlVG3IRBGVgQiZ42y19alrHAjOS6jfSVd2uR8xXpVRJUnHg87Kug9uY8NEdORLu-lCpT8v2KyvlpwievuW2B-SGRaPu50jXCjbMjLPlhxMxtC87AOCe3Te0mMmBV4jmpL-CYgf5PzAnWC3wlEcUggo4LNzs-HGh4ySOcKDQ**",
+            "flowId": "2c864a52-ce14-4319-8b24-986dbce54bc7",
+            "flowStep": "username",
+            "client_id": "res_ox_prod",
+            "reqId": "8ceacb5c-8221-4ad4-9e03-6f785b003714"
+        }
+    </script>
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.comcast.com/cmp/css/cookie-consent.css" />
+    <script type="text/javascript" src="https://cdn-prod.securiti.ai/consent/auto_blocking/4b9bbe2a-9c5d-4512-bb76-768a8ea32bc0/a76cdf55-ebf2-44a8-890a-2b5167b45b18.js"></script>
+
+    <style>
+        .da-fullscreen iframe[id^="utif_"] {
+            max-width: 300px;
+            max-height: 600px;
+            overflow: hidden;
+        }
+    </style>
+    <script>
+        document.addEventListener("c-tracking-log-page", function() {
+            document.documentElement.classList.add(digitalData.page.category.subCategory1);
+        });
+    </script>
+    <style>
+    </style>
+
+    <noscript>
+			<link rel="stylesheet" type="text/css" href="/static/resi/dist/noscript-styles-d8e85d8.css" />
+		</noscript>
+</head>
+
+<body class=" has-footer ">
+    <noscript class="no-script">
+    <div class="no-script-error">
+        <img src="/static/images/global/alert--caution.svg" alt="alert-caution" />
+        <h2>We can't sign you in</h2>
+        <p>Your browser may be set to block cookies, or you may have Javascript disabled. Check your browser settings and try again.</p>
+        <a href=""><button>Try again</button></a>
+    </div>
+</noscript>
+
+    <header aria-hidden="true">
+        <xc-header client-id="cima-login" disable-controller hide-header></xc-header>
+    </header>
+    <main class='flex flex-col lg:flex-row lg:justify-center items-center lg:items-start gap-6 lg:gap-0 next:p-0 '>
+        <div id="formPanel" class="lg:basis-1/2 px-6 pt-10 lg:pt-24">
+            <div class="box-content w-full max-w-[420px] m-auto">
+                <form name="signin" action="https://login.xfinity.com/login" method="post" novalidate>
+
+                    <div class="single logo-wrapper flex items-center mb-7 lg:mb-10">
+                        <span aria-role="img" class="bg-xfinity-logo bg-cover bg-no-repeat inline-block flex-shrink-0 h-6 w-17.75"></span>
+                    </div>
+                    <h1 tag="h1" display="display2">Sign in with your Xfinity ID</h1>
+                    <prism-input-text prism-id="user" name="user" label="Enter your Xfinity ID" hide-label="true" placeholder="Email, mobile, or username" value="" autocomplete="username" autocorrect="off" auto-capitalize="off" spellcheck="false" maxlength="128" required="true"
+                        data-value-missing="Please enter your Xfinity ID to sign in."></prism-input-text>
+                    <prism-text id="implied-legal" display="body3">By signing in, you agree to our <a href="http://my.xfinity.com/terms/web/">Terms of Service</a> and <a href="http://xfinity.comcast.net/privacy/">Privacy Policy</a>.</prism-text>
+
+                    <prism-button prism-id="sign_in" type="submit" tone="theme1" class="block my-10">Let's go</prism-button>
+
+
+                    <input type="hidden" name="r" value="comcast.net">
+                    <input type="hidden" name="s" value="oauth">
+                    <input type="hidden" name="continue" value="https://oauth.xfinity.com//oauth//authorize?client_id=res_ox_prod&amp;response_type=code&amp;redirect_uri=https://connect.xfinity.com/appsuite/api/comcast/openid&amp;scope=urn:csp:scope:self-help:account%20prefmgr:adoptout:rendpoint%20openid%20email%20profile%20address%20phone&amp;state=eyJ0ek9mZnNldCI6IjM2MDAwMDAifQ==&amp;response=1&amp;reqId=a7f3d98b-f3a7-460b-abfd-8aff0e3388a7">
+                    <input type="hidden" name="flowId" value="2c864a52-ce14-4319-8b24-986dbce54bc7">
+                    <input type="hidden" name="flowStep" value="username">
+                    <input type="hidden" name="client_id" value="res_ox_prod">
+                    <input type="hidden" name="reqId" value="8ceacb5c-8221-4ad4-9e03-6f785b003714">
+                </form>
+
+
+
+                <prism-lineitem id="quick-bill-pay" tag="a" class="hidden" label="Pay any balance without signing in" href="https://customer.xfinity.com/lite" target="_self">
+                </prism-lineitem>
+
+
+
+
+                <prism-lineitem id="forgot-xfinity-id-item" tag="a" label="Find your Xfinity ID" href="https://idm.xfinity.com/myaccount/lookup?continue=https%3A%2F%2Flogin.xfinity.com%2Flogin%3Fr%3Dcomcast.net%26s%3Doauth%26continue%3Dhttps%253A%252F%252Foauth.xfinity.com%252F%252Foauth%252F%252Fauthorize%253Fclient_id%253Dres_ox_prod%2526response_type%253Dcode%2526redirect_uri%253Dhttps%253A%252F%252Fconnect.xfinity.com%252Fappsuite%252Fapi%252Fcomcast%252Fopenid%2526scope%253Durn%253Acsp%253Ascope%253Aself-help%253Aaccount%252520prefmgr%253Aadoptout%253Arendpoint%252520openid%252520email%252520profile%252520address%252520phone%2526state%253DeyJ0ek9mZnNldCI6IjM2MDAwMDAifQ%253D%253D%2526response%253D1%2526reqId%253Da7f3d98b-f3a7-460b-abfd-8aff0e3388a7%26client_id%3Dres_ox_prod%26reqId%3D8ceacb5c-8221-4ad4-9e03-6f785b003714%26rm%3D2%26ui_style%3Dlight&ui_style=light"
+                    target="_self">
+                </prism-lineitem>
+
+                <prism-lineitem id="create-username-item" tag="a" label="Create a new Xfinity ID" href="https://idm.xfinity.com/myaccount/create-uid?continue=https%3A%2F%2Flogin.xfinity.com%2Flogin%3Fr%3Dcomcast.net%26s%3Doauth%26continue%3Dhttps%253A%252F%252Foauth.xfinity.com%252F%252Foauth%252F%252Fauthorize%253Fclient_id%253Dres_ox_prod%2526response_type%253Dcode%2526redirect_uri%253Dhttps%253A%252F%252Fconnect.xfinity.com%252Fappsuite%252Fapi%252Fcomcast%252Fopenid%2526scope%253Durn%253Acsp%253Ascope%253Aself-help%253Aaccount%252520prefmgr%253Aadoptout%253Arendpoint%252520openid%252520email%252520profile%252520address%252520phone%2526state%253DeyJ0ek9mZnNldCI6IjM2MDAwMDAifQ%253D%253D%2526response%253D1%2526reqId%253Da7f3d98b-f3a7-460b-abfd-8aff0e3388a7%26client_id%3Dres_ox_prod%26reqId%3D8ceacb5c-8221-4ad4-9e03-6f785b003714%26rm%3D2%26ui_style%3Dlight&ui_style=light"
+                    target="_self">
+                </prism-lineitem>
+
+
+            </div>
+        </div>
+
+        <aside id="asidePanel" class=" flex  empty:hidden flex-col lg:basis-1/2 h-full lg:bg-[--aside-background-color] lg:[background-image:var(--aside-background-image)] lg:bg-left-top lg:bg-no-repeat">
+            <div id="ad-block" class="w-[300px] h-[250px] lg:w-full lg:h-full lg:min-w-[512px] lg:min-h-[640px] lg:max-w-[900px] lg:max-h-[1200px] !m-auto lg:!mt-0">
+                <a id="mobile-ad" class="bg-img-xs-md w-full h-full" style="--bg-img:url('https://assets.xfinity.com/assets/cima/login/default/ad/Xfinity Refreshed SIPs Live Sports_Live Sports 300x250 .jpg');" href="https://www.xfinity.com/stream/collection/sports" aria-label="Only Xfinity gives you access to the most live sports; say Sports into your Xfinity Voice remote to Watch Now. Disclaimer that most live sports includes viewing on integrated third-party apps."></a>
+                <a id="desktop-ad" class="bg-img-lg w-full h-full" style="--bg-img:url('https://assets.xfinity.com/assets/cima/login/default/ad/Xfinity Refreshed SIPs Live Sports_Live Sports 960x1200 .jpg');" href="https://www.xfinity.com/stream/collection/sports" aria-label="Only Xfinity gives you access to the most live sports; say Sports into your Xfinity Voice remote to Watch Now. Disclaimer that most live sports includes viewing on integrated third-party apps."></a>
+            </div>
+        </aside>
+    </main>
+    <footer>
+        <xc-footer client-id="cima-login" slim-footer theme="light"></xc-footer>
+    </footer>
+
+
+    <script type="module">
+        import { persistInitialRequestWithParams } from "/static/resi/dist/session-storage-d8e85d8.js"; persistInitialRequestWithParams();
+    </script>
+
+    <script type="module">
+        import initCookieConsent from "/static/ui-common/cookie-consent-d8e85d8.js"; initCookieConsent( "a76cdf55-ebf2-44a8-890a-2b5167b45b18", "Cookie Preferences", "en" );
+    </script>
+
+
+
+    <script type="text/javascript" src="https://static.cimcontent.net/data-layer/?appID=login"></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const data = {
+                transaction: {
+                    attributes: {
+                        flowSessionId: "2c864a52-ce14-4319-8b24-986dbce54bc7"
+                    }
+                },
+                page: {
+                    pageInfo: {
+                        referrerId: "res_ox_prod"
+                    }
+                }
+            }
+            document.body.setAttribute("data-tracking", JSON.stringify(data))
+            document.dispatchEvent(new CustomEvent("c-tracking-log-page", {
+                bubbles: true
+            }));
+        });
+    </script>
+</body>
+
+</html>

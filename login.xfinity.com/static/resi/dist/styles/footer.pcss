@@ -1,0 +1,115 @@
+:root {
+  --footer-logo: url("/static/images/global/xfinity-logo-black.svg");
+}
+
+.dark {
+  --footer-logo: url("/static/images/global/xfinity-logo-white.svg");
+}
+
+footer {
+  @apply w-full bg-material-neutral-base mt-4 z-0;
+
+  /* TODO: Remove old styles below */
+
+  & .content {
+    @apply flex flex-col justify-between items-center px-3 py-6 text-body2;
+
+    @media (min-width: theme("screens.footer-lg")) {
+      &:not(:lang(es)) {
+        @apply flex-row justify-center;
+      }
+    }
+
+    @media (min-width: theme("screens.footer-lg-spanish")) {
+      &:lang(es) {
+        @apply flex-row justify-center;
+      }
+    }
+  }
+
+  & nav {
+    @apply flex flex-col items-center;
+    @media (min-width: theme("screens.footer-lg")) {
+      &:not(:lang(es)) {
+        @apply inline-block;
+      }
+    }
+    @media (min-width: theme("screens.footer-lg-spanish")) {
+      &:lang(es) {
+        @apply inline-block;
+      }
+    }
+
+    & .divider {
+      &:before {
+        @apply mx-2 p-0 w-px h-3.5 align-middle inline-block bg-fill-neutral2-base;
+        content: "";
+      }
+
+      &.hide-compact {
+        @apply hidden;
+        @media (min-width: theme("screens.footer-lg")) {
+          &:not(:lang(es)) {
+            @apply inline-block;
+          }
+        }
+        @media (min-width: theme("screens.footer-lg-spanish")) {
+          &:lang(es) {
+            @apply inline-block;
+          }
+        }
+      }
+    }
+
+    & .links {
+      & > a {
+        @apply no-underline text-neutral-base;
+      }
+    }
+  }
+
+  /* TODO: Remove old styles above */
+
+  .footer-content {
+    @apply p-6 text-neutral-base bg-material-neutral-base
+      flex flex-nowrap flex-col 2xl:flex-row
+      justify-center items-center gap-y-4 gap-x-8;
+
+    & .logo {
+      @apply h-8 w-24 bg-cover bg-no-repeat;
+      background-image: var(--footer-logo);
+    }
+
+    & nav {
+      @apply flex flex-nowrap flex-col xl:flex-row
+        justify-center items-center gap-y-4 gap-x-8;
+
+      & .footer-links {
+        @apply flex flex-nowrap flex-col footer-md:flex-row
+          justify-center items-center gap-y-4 gap-x-8;
+
+        &:lang(es) {
+          @apply footer-md:flex-col footer-md-spanish:flex-row;
+        }
+
+        & a {
+          @apply no-underline;
+        }
+      }
+    }
+  }
+}
+
+.next {
+  footer {
+    @apply mt-0;
+  }
+}
+
+/* TODO: remove old styles below */
+
+html:not(.da-fullscreen) {
+  & .ad-links {
+    @apply hidden;
+  }
+}

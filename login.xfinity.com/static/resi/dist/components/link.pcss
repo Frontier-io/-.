@@ -1,0 +1,12 @@
+.dark {
+  & a {
+    @apply text-neutral-base;
+    &:focus {
+      @apply text-neutral-focus;
+      outline-color: rgb(var(--border-color-stroke-neutral-base));
+    }
+    &:hover {
+      @apply text-neutral-hover;
+    }
+  }
+}
